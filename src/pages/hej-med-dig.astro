@@ -1,5 +1,5 @@
 ---
-
+const name = Astro.url.searchParams.get("name") || "noname";
 ---
 
 <html lang="en">
@@ -11,11 +11,10 @@
 		<title>Astro</title>
 	</head>
 	<a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
-	<a href="/hej-med-dig/">hej med dig</a>
+	<a href="/about/">About</a>
+	<a href="/blog/">Blog</a>
+    <a href="/hej-med-dig/">hej med dig</a>
 	<body>
-		<h1>  <h1>My Astro Learning Blog</h1>
-        <p>This is where I will post about my journey learning Astro.</p></h1>
+        <h1>Hej med dig {name}!</h1>
 	</body>
 </html>
